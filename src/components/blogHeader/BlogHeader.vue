@@ -1,25 +1,26 @@
 <template>
   <div id="blogHeader">
     <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">Vue Blog</b-navbar-brand>
+      <b-navbar-brand href="#">{{ blogTitle }}</b-navbar-brand>
 
-    
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item-dropdown right>
-       <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="/">Home</b-nav-item>
+        </b-navbar-nav>
       </b-collapse>
-  </b-navbar>
+    </b-navbar>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'BlogHeader'
+  name: 'BlogHeader',
+  data() {
+    return {
+      blogTitle: 'Vue Blog'
+    };
+  }
 };
 </script>
