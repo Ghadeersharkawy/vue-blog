@@ -43,6 +43,10 @@
       "parser": "babel-eslint"
     }
   },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions"
