@@ -18,6 +18,8 @@
     
         <b-col lg="12">
            <h3>related Comments</h3>
+           <!-- add new comment -->
+           <add-comment>/
             <!-- current-comments  -->
             
         </b-col>
@@ -29,6 +31,7 @@
   </div>
 </template>
 <script>
+import AddComment from '@/components/comments/AddComment'
 export default {
   name: 'PostDetails',
   props: {
@@ -36,6 +39,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  components:{
+AddComment
   },
   data() {
     return {};
