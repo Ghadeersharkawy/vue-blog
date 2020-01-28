@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <b-container fluid>
-    <!-- display all posts in blog home page -->
-      <blog-posts/>
+      <!-- display all posts in blog home page -->
+      <blog-posts />
     </b-container>
   </div>
 </template>

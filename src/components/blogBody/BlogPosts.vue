@@ -2,11 +2,11 @@
   <div id="blogPosts">
     <b-container>
       <b-row>
-      <!-- loop over posts -->
+        <!-- loop over posts -->
         <b-col lg="6" sm="12" v-for="(post, index) in posts" :key="post.id">
-        <!-- display posts as cards -->
+          <!-- display posts as cards -->
           <b-card
-            :title="post.title"  
+            :title="post.title"
             :img-src="post.thumbnailUrl"
             img-alt="Image"
             img-top
@@ -16,7 +16,8 @@
               $router.push({
                 name: 'postdetails',
                 params: { id: post.id, post: posts[index] }
-              })"
+              })
+            "
           ></b-card>
         </b-col>
       </b-row>

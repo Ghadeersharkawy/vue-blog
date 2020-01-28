@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  <!-- component header with logo and home link -->
+    <!-- component header with logo and home link -->
     <blog-header />
     <router-view />
   </div>
