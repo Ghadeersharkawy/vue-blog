@@ -18,14 +18,25 @@
             <add-comment />
             <!-- current-comments  -->
             <div class="current-comments my-3">
-              <b-list-group v-for="comment in post.comments" :key="comment.postId">
+              <b-list-group
+                v-for="comment in post.comments"
+                :key="comment.postId"
+              >
                 <b-list-group-item class="mb-2">
                   <!-- current-comment text  -->
 
-                  <p>{{ comment.body }}</p>
+                  <p>
+                    <quote>{{ comment.body }}</quote>
+                  </p>
                   <!-- current-comment author & email -->
-                  <p>posted by:{{ comment.name }}</p>
-                  <p>email: {{comment.email}}</p>
+                  <p>
+                    <strong>posted by</strong>
+                    :{{ comment.name }}
+                  </p>
+                  <p>
+                    <strong>email</strong>
+                    : {{ comment.email }}
+                  </p>
                 </b-list-group-item>
               </b-list-group>
             </div>
