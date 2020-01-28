@@ -2,23 +2,19 @@
   <div class="add-comment">
     <b-form-textarea
       id="textarea"
-      v-model="text"
       placeholder="Enter Comment..."
       rows="3"
       max-rows="6"
+      class="mb-2"
     ></b-form-textarea>
     <b-button variant="primary" @click="submit">Submit</b-button>
-
-    <pre class="mt-3 mb-0">{{ text }}</pre>
   </div>
 </template>
 <script>
 export default {
   name: 'AddComment',
   data() {
-    return {
-      text: ''
-    };
+    return {};
   },
   methods: {
     submit: function() {}

@@ -16,8 +16,7 @@
               $router.push({
                 name: 'postdetails',
                 params: { id: post.id, post: posts[index] }
-              })
-            "
+              })"
           ></b-card>
         </b-col>
       </b-row>

@@ -11,16 +11,14 @@
           <b-jumbotron>
             <template v-slot:lead>{{ post.body }}</template>
           </b-jumbotron>
-        </b-col>
-        <!--rlated comments  -->
-        <section class="related comments">
-          <b-col lg="12">
-            <h3>related Comments</h3>
+          <!--rlated comments  -->
+          <section class="related comments">
+            <h4 class="rlated-title mb-2">related Comments</h4>
             <!-- add new comment -->
             <add-comment />
             <!-- current-comments  -->
-          </b-col>
-        </section>
+          </section>
+        </b-col>
       </b-row>
     </b-container>
   </div>
