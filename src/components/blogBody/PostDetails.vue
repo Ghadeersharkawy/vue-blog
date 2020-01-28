@@ -4,7 +4,7 @@
       <b-row>
         <!-- post details -->
         <b-col lg="12">
-          <b-img :src="post.url" fluid class="details_img"></b-img>
+          <b-img :src="post.imgUrl" fluid class="details_img"></b-img>
           <!-- post-title -->
           <h2 class="my-3 post-title">{{ post.title }}</h2>
           <!-- post-content -->
@@ -17,6 +17,18 @@
             <!-- add new comment -->
             <add-comment />
             <!-- current-comments  -->
+            <div class="current-comments my-3">
+              <b-list-group v-for="comment in post.comments" :key="comment.postId">
+                <b-list-group-item class="mb-2">
+                  <!-- current-comment text  -->
+
+                  <p>{{ comment.body }}</p>
+                  <!-- current-comment author & email -->
+                  <p>posted by:{{ comment.name }}</p>
+                  <p>email: {{comment.email}}</p>
+                </b-list-group-item>
+              </b-list-group>
+            </div>
           </section>
         </b-col>
       </b-row>
