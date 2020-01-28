@@ -1,0 +1,9 @@
+//global styling
+@import 'global/global';
+//helpers
+@import 'helpers/variables';
+
+//views (pages)styling
+@import 'layout/header';
+@import 'pages/blogposts';
+@import 'pages/postdetails';

@@ -1,0 +1,16 @@
+#blogPosts {
+  .post_card {
+    min-height: 470px;
+    @media screen and (max-width:$max-mob){
+    min-height: 200px;
+    }
+    cursor: pointer;
+    .card-body{
+      .card-title{
+        &:hover{
+          color:var(--blue);
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,22 @@
 <template>
   <div id="blogPosts">
-    <b-container class="bv-example-row">
+    <b-container>
       <b-row>
-        <b-col cols="4" v-for="(post, index) in posts" :key="index">
+      <!-- loop over posts -->
+        <b-col lg="6" sm="12" v-for="(post, index) in posts" :key="post.id">
+        <!-- display posts as cards -->
           <b-card
-            :title="post.title"
+            :title="post.title"  
             :img-src="post.thumbnailUrl"
             img-alt="Image"
             img-top
             tag="article"
-            class="my-4"
+            class="my-4 post_card"
+            @click="
+              $router.push({
+                name: 'postdetails',
+                params: { id: post.id, post: posts[index] }
+              })"
           ></b-card>
         </b-col>
       </b-row>
@@ -22,6 +29,7 @@ export default {
   name: 'BlogPosts',
   data() {
     return {
+      //posts data
       posts: [
         {
           userId: 1,

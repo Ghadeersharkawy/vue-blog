@@ -1,0 +1,10 @@
+#blogHeader{
+  margin-bottom:2em;
+  .navbar-dark .navbar-nav .nav-link {
+    color: $linkColor;
+    &:hover{
+      color:$hoverColor;
+    }
+}
+ 
+}
