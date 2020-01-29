@@ -18,7 +18,10 @@
             <add-comment :comment="comments" />
             <!-- current-comments  -->
             <div class="current-comments my-3">
-              <b-list-group v-for="comment in post.comments" :key="comment.postId">
+              <b-list-group
+                v-for="comment in post.comments"
+                :key="comment.postId"
+              >
                 <b-list-group-item class="mb-2">
                   <!-- current-comment text  -->
 
