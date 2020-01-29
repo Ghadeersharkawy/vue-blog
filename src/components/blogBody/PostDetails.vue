@@ -15,13 +15,10 @@
           <section class="related comments">
             <h4 class="rlated-title mb-2">related Comments</h4>
             <!-- add new comment -->
-            <add-comment />
+            <add-comment :comment="comments" />
             <!-- current-comments  -->
             <div class="current-comments my-3">
-              <b-list-group
-                v-for="comment in post.comments"
-                :key="comment.postId"
-              >
+              <b-list-group v-for="comment in post.comments" :key="comment.postId">
                 <b-list-group-item class="mb-2">
                   <!-- current-comment text  -->
 
